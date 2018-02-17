@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
 
 app.post('/', (req, res) => {
 	console.log(req.body)
-	res.send('success')
+	res.send({passcode: req.body.passcode})
 })
 
 app.listen(3000, () => console.log('Example app listening on port 3000!'))
